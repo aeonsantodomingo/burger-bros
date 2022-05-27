@@ -1,0 +1,409 @@
+@import "variables";
+
+// general settings
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  font-family: "Montserrat", sans-serif;
+  background-color: $bg-dark;
+  overflow-x: hidden;
+  touch-action: manipulation;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+// header + hero
+
+#header {
+  .container {
+    background-image: url(/dist/assets/images/heroImg.jpg);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: 1px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 600px;
+      background-color: #333;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.7;
+      z-index: 0;
+    }
+
+    & > * {
+      z-index: 10;
+      position: relative;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem;
+
+      .logo {
+        font-size: 3rem;
+        font-family: "Pacifico", cursive;
+
+        &:hover {
+          color: $highlighter;
+          transition: 1s;
+        }
+      }
+
+      .hamburger {
+        display: none;
+      }
+
+      .navUl {
+        display: flex;
+        list-style-type: none;
+
+        li {
+          margin: 0 1rem;
+          font-size: 1.3rem;
+          font-weight: 300;
+
+          a:hover {
+            color: $highlighter;
+            border-bottom: 1px solid $highlighter;
+            transition: 1s;
+          }
+
+          .current {
+            border-bottom: 1px solid $highlighter;
+          }
+        }
+      }
+    }
+
+    #hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 50%;
+
+      h1 {
+        color: $text-color;
+        font-size: 3rem;
+
+        span {
+          color: $highlighter;
+          font-style: italic;
+        }
+      }
+
+      a {
+        display: block;
+        position: relative;
+        background-color: $bg-dark;
+        font-weight: 600;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 1rem;
+        width: 180px;
+        border-radius: 10px;
+
+        &:hover {
+          color: $bg-dark;
+          background-color: $highlighter;
+          transition: 1s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+// hero
+
+#about {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 2rem;
+
+    h1 {
+      color: $text-color;
+      font-size: 4rem;
+      span {
+        color: $highlighter;
+        font-style: italic;
+      }
+    }
+
+    p {
+      color: $text-color;
+      font-size: 2rem;
+      font-weight: 200;
+      margin-top: 1rem;
+    }
+
+    i {
+      color: $highlighter;
+      font-size: 3rem;
+      position: relative;
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+#crowdFavorite {
+  .container {
+    display: flex;
+    background: $bg-less-dark;
+
+    .crowdFavBanner {
+      position: absolute;
+      right: 0;
+      bottom: -290px;
+
+      p {
+        background-color: $bg-dark;
+        color: $highlighter;
+        font-weight: 500;
+        padding: 1rem;
+        border-radius: 10px 0 0 10px;
+      }
+    }
+
+    .crowdFavImg {
+      img {
+        width: 750px;
+        height: 100%;
+      }
+    }
+
+    .crowdFavInfo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0 auto;
+      h1 {
+        color: $text-color;
+        font-size: 4.5rem;
+        span {
+          color: $highlighter;
+          font-style: italic;
+          font-weight: 400;
+        }
+      }
+
+      .crowdFavLinks {
+        margin: 1rem 0;
+
+        a {
+          display: inline-block;
+          position: relative;
+          background-color: $bg-dark;
+          font-weight: 600;
+          text-align: center;
+          padding: 1rem;
+          margin: 0 0.5rem;
+          width: 180px;
+          border-radius: 10px;
+
+          &:hover {
+            color: $bg-dark;
+            background-color: $highlighter;
+            transition: 1s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+// find us banner + location
+
+#findUsBanner {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+
+    h1 {
+      color: $text-color;
+      font-size: 3rem;
+      span {
+        color: $highlighter;
+      }
+    }
+
+    i {
+      color: $highlighter;
+      font-size: 2rem;
+      position: relative;
+      margin-top: 1rem;
+    }
+  }
+}
+
+#location {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    background-color: $bg-less-dark;
+
+    .locationInfo {
+      display: flex;
+      justify-content: center;
+      align-items: left;
+      margin: 0 auto;
+      flex-direction: column;
+
+      h1 {
+        color: $highlighter;
+        font-size: 4rem;
+      }
+      p {
+        color: $text-color;
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 0.5rem 0;
+      }
+    }
+
+    .locationImg {
+      img {
+        width: 700px;
+        height: 100%;
+      }
+    }
+  }
+}
+
+// footer
+
+#footer {
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    line-height: 2.5rem;
+
+    .siteLinks {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        color: $highlighter;
+        font-size: 1.5rem;
+      }
+
+      a {
+        font-weight: 300;
+
+        &:hover {
+          color: $highlighter;
+        }
+      }
+    }
+
+    .mailingList {
+      display: flex;
+      flex-direction: column;
+      h2 {
+        color: $highlighter;
+        font-size: 1.5rem;
+      }
+
+      p {
+        color: $text-color;
+        font-weight: 300;
+      }
+
+      input {
+        padding: 0.7rem;
+        border-radius: 10px;
+        border: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button {
+        position: relative;
+        display: block;
+        padding: 0.7rem;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        margin-top: 1rem;
+        width: 150px;
+        background-color: $highlighter;
+
+        &:hover {
+          background-color: #333;
+          color: $text-color;
+          transition: 1s;
+        }
+      }
+    }
+
+    .contact {
+      h3 {
+        color: $highlighter;
+        font-size: 1.5rem;
+      }
+
+      p {
+        color: $text-color;
+      }
+    }
+
+    .social-links {
+      color: $highlighter;
+      font-size: 2.4rem;
+
+      i {
+        &:hover {
+          color: $text-color;
+          transition: 1s;
+        }
+      }
+    }
+  }
+
+  .credits {
+    background-color: $highlighter;
+    color: $bg-dark;
+    text-align: center;
+    padding: 0.5rem 0;
+
+    a {
+      color: $bg-dark;
+      text-decoration: underline;
+      font-weight: 500;
+
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}
