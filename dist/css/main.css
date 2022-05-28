@@ -202,6 +202,117 @@ a {
     width: 700px;
     height: 100%; }
 
+#menuHeader .container {
+  background-image: url(/dist/assets/images/menuBanner.jpg);
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: 1px; }
+  #menuHeader .container::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 0; }
+  #menuHeader .container > * {
+    z-index: 10;
+    position: relative; }
+  #menuHeader .container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem; }
+    #menuHeader .container nav .logo {
+      font-size: 3rem;
+      font-family: "Pacifico", cursive; }
+      #menuHeader .container nav .logo:hover {
+        color: #fdff8d;
+        transition: 1s; }
+    #menuHeader .container nav .hamburger {
+      display: none; }
+    #menuHeader .container nav .navUl {
+      display: flex;
+      list-style-type: none; }
+      #menuHeader .container nav .navUl li {
+        margin: 0 1rem;
+        font-size: 1.3rem;
+        font-weight: 300; }
+        #menuHeader .container nav .navUl li a:hover {
+          color: #fdff8d;
+          border-bottom: 1px solid #fdff8d;
+          transition: 1s; }
+        #menuHeader .container nav .navUl li .current {
+          border-bottom: 1px solid #fdff8d; }
+  #menuHeader .container #menuHero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50%; }
+    #menuHeader .container #menuHero h1 {
+      color: #fdff8d;
+      font-family: "Pacifico", sans-serif;
+      font-size: 4rem; }
+    #menuHeader .container #menuHero a {
+      display: block;
+      position: relative;
+      background-color: #1d1d1d;
+      font-weight: 600;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 1rem;
+      width: 180px;
+      border-radius: 10px; }
+      #menuHeader .container #menuHero a:hover {
+        color: #1d1d1d;
+        background-color: #fdff8d;
+        transition: 1s ease-in-out; }
+
+#burgersBanner .container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem; }
+  #burgersBanner .container h1 {
+    color: #fdff8d;
+    font-size: 3rem;
+    font-family: "Pacifico", sans-serif;
+    line-height: 6rem; }
+  #burgersBanner .container p {
+    color: #fff;
+    font-size: 1.5rem; }
+
+#burgersItems .container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem; }
+  #burgersItems .container .burgersCard {
+    display: flex;
+    background: #333;
+    width: 500px;
+    border-radius: 10px 10px 10px 10px; }
+    #burgersItems .container .burgersCard .cardImg img {
+      width: 180px;
+      height: 100%;
+      border-radius: 10px 0 0 10px; }
+    #burgersItems .container .burgersCard .cardInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      margin: 0 auto; }
+      #burgersItems .container .burgersCard .cardInfo h1 {
+        color: #fdff8d;
+        font-family: "Pacifico", sans-serif; }
+      #burgersItems .container .burgersCard .cardInfo p {
+        color: #fff; }
+      #burgersItems .container .burgersCard .cardInfo .price {
+        font-weight: 800; }
+
 #footer .container {
   display: flex;
   justify-content: space-evenly;
