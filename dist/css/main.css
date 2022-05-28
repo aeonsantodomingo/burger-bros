@@ -72,7 +72,7 @@ a {
       font-size: 3rem; }
       #header .container #hero h1 span {
         color: #fdff8d;
-        font-style: italic; }
+        font-family: "Pacifico", sans-serif; }
     #header .container #hero a {
       display: block;
       position: relative;
@@ -102,7 +102,7 @@ a {
     font-size: 4rem; }
     #about .container h1 span {
       color: #fdff8d;
-      font-style: italic; }
+      font-family: "Pacifico", sans-serif; }
   #about .container p {
     color: #fff;
     font-size: 2rem;
@@ -141,10 +141,10 @@ a {
       font-size: 4.5rem; }
       #crowdFavorite .container .crowdFavInfo h1 span {
         color: #fdff8d;
-        font-style: italic;
-        font-weight: 400; }
+        font-family: "Pacifico", sans-serif;
+        line-height: 1.2rem; }
     #crowdFavorite .container .crowdFavInfo .crowdFavLinks {
-      margin: 1rem 0; }
+      margin: 2rem 0; }
       #crowdFavorite .container .crowdFavInfo .crowdFavLinks a {
         display: inline-block;
         position: relative;
@@ -170,7 +170,8 @@ a {
     color: #fff;
     font-size: 3rem; }
     #findUsBanner .container h1 span {
-      color: #fdff8d; }
+      color: #fdff8d;
+      font-family: "Pacifico", sans-serif; }
   #findUsBanner .container i {
     color: #fdff8d;
     font-size: 2rem;
@@ -190,7 +191,8 @@ a {
     flex-direction: column; }
     #location .container .locationInfo h1 {
       color: #fdff8d;
-      font-size: 4rem; }
+      font-size: 4rem;
+      font-family: "Pacifico", sans-serif; }
     #location .container .locationInfo p {
       color: #fff;
       font-size: 2rem;
