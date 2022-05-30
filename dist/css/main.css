@@ -120,7 +120,7 @@ a {
   #crowdFavorite .container .crowdFavBanner {
     position: absolute;
     right: 0;
-    bottom: -290px; }
+    bottom: -320px; }
     #crowdFavorite .container .crowdFavBanner p {
       background-color: #1d1d1d;
       color: #fdff8d;
@@ -287,9 +287,11 @@ a {
     font-size: 1.5rem; }
 
 #burgersItems .container {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 2rem; }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  grid-gap: 4rem;
+  padding: 1.5rem; }
   #burgersItems .container .burgersCard {
     display: flex;
     background: #333;
@@ -298,7 +300,8 @@ a {
     #burgersItems .container .burgersCard .cardImg img {
       width: 180px;
       height: 100%;
-      border-radius: 10px 0 0 10px; }
+      border-radius: 10px 0 0 10px;
+      background-size: contain; }
     #burgersItems .container .burgersCard .cardInfo {
       display: flex;
       flex-direction: column;
@@ -312,6 +315,66 @@ a {
         color: #fff; }
       #burgersItems .container .burgersCard .cardInfo .price {
         font-weight: 800; }
+
+#sidesBanner .container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem; }
+  #sidesBanner .container h1 {
+    color: #fdff8d;
+    font-size: 3rem;
+    font-family: "Pacifico", sans-serif;
+    line-height: 6rem; }
+  #sidesBanner .container p {
+    color: #fff;
+    font-size: 1.5rem; }
+
+#sidesItems .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  grid-gap: 4rem;
+  padding: 1.5rem; }
+  #sidesItems .container .sidesCard {
+    display: flex;
+    background: #333;
+    width: 500px;
+    border-radius: 10px 10px 10px 10px; }
+    #sidesItems .container .sidesCard .cardImg img {
+      width: 180px;
+      height: 100%;
+      border-radius: 10px 0 0 10px;
+      background-size: contain; }
+    #sidesItems .container .sidesCard .cardInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      margin: 0 auto; }
+      #sidesItems .container .sidesCard .cardInfo h1 {
+        color: #fdff8d;
+        font-family: "Pacifico", sans-serif; }
+      #sidesItems .container .sidesCard .cardInfo p {
+        color: #fff; }
+      #sidesItems .container .sidesCard .cardInfo .price {
+        font-weight: 800; }
+
+#orderNowBtn .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5rem; }
+  #orderNowBtn .container a {
+    color: #fff;
+    background-color: #3f3f3f;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px; }
+    #orderNowBtn .container a:hover {
+      background-color: #fdff8d;
+      color: #1d1d1d;
+      transition: 1s; }
 
 #footer .container {
   display: flex;

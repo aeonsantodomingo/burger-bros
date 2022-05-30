@@ -168,6 +168,8 @@ a {
   }
 }
 
+// crowd favorite
+
 #crowdFavorite {
   .container {
     display: flex;
@@ -176,7 +178,7 @@ a {
     .crowdFavBanner {
       position: absolute;
       right: 0;
-      bottom: -290px;
+      bottom: -320px;
 
       p {
         background-color: $bg-dark;
@@ -401,7 +403,7 @@ a {
   }
 }
 
-// burgers
+// menu
 
 #burgersBanner {
   .container {
@@ -423,11 +425,15 @@ a {
   }
 }
 
+// menu > burgers
+
 #burgersItems {
   .container {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 4rem;
+    padding: 1.5rem;
 
     .burgersCard {
       display: flex;
@@ -440,6 +446,7 @@ a {
           width: 180px;
           height: 100%;
           border-radius: 10px 0 0 10px;
+          background-size: contain;
         }
       }
       .cardInfo {
@@ -461,6 +468,100 @@ a {
         .price {
           font-weight: 800;
         }
+      }
+    }
+  }
+}
+
+// menu > sides
+
+#sidesBanner {
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem;
+
+    h1 {
+      color: $highlighter;
+      font-size: 3rem;
+      font-family: "Pacifico", sans-serif;
+      line-height: 6rem;
+    }
+
+    p {
+      color: $text-color;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// menu > sides
+
+#sidesItems {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 4rem;
+    padding: 1.5rem;
+
+    .sidesCard {
+      display: flex;
+      background: #333;
+      width: 500px;
+      border-radius: 10px 10px 10px 10px;
+
+      .cardImg {
+        img {
+          width: 180px;
+          height: 100%;
+          border-radius: 10px 0 0 10px;
+          background-size: contain;
+        }
+      }
+      .cardInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        margin: 0 auto;
+
+        h1 {
+          color: $highlighter;
+          font-family: "Pacifico", sans-serif;
+        }
+
+        p {
+          color: $text-color;
+        }
+
+        .price {
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}
+
+// order now btn
+
+#orderNowBtn {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5rem;
+    a {
+      color: $text-color;
+      background-color: $bg-less-dark;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      width: 200px;
+      &:hover {
+        background-color: $highlighter;
+        color: $bg-dark;
+        transition: 1s;
       }
     }
   }
