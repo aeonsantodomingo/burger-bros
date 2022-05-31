@@ -76,7 +76,8 @@ a {
     #header .container #hero a {
       display: block;
       position: relative;
-      background-color: #1d1d1d;
+      background-color: #fdff8d;
+      color: #1d1d1d;
       font-weight: 600;
       text-align: center;
       padding: 1rem;
@@ -84,8 +85,8 @@ a {
       width: 180px;
       border-radius: 10px; }
       #header .container #hero a:hover {
-        color: #1d1d1d;
-        background-color: #fdff8d;
+        color: #fff;
+        background-color: #1d1d1d;
         transition: 1s ease-in-out; }
 
 #about .container {
@@ -365,22 +366,151 @@ a {
   align-items: center;
   padding: 4.5rem; }
   #orderNowBtn .container a {
-    color: #fff;
-    background-color: #3f3f3f;
+    color: #1d1d1d;
+    background-color: #fdff8d;
     padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
-    width: 200px; }
+    width: 200px;
+    font-weight: 500; }
     #orderNowBtn .container a:hover {
-      background-color: #fdff8d;
-      color: #1d1d1d;
+      background-color: #3f3f3f;
+      color: #fff;
       transition: 1s; }
+
+#careersHeader .container {
+  background-image: url(/dist/assets/images/careers1.jpg);
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: 1px; }
+  #careersHeader .container::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 0; }
+  #careersHeader .container > * {
+    z-index: 10;
+    position: relative; }
+  #careersHeader .container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem; }
+    #careersHeader .container nav .logo {
+      font-size: 3rem;
+      font-family: "Pacifico", cursive; }
+      #careersHeader .container nav .logo:hover {
+        color: #fdff8d;
+        transition: 1s; }
+    #careersHeader .container nav .hamburger {
+      display: none; }
+    #careersHeader .container nav .navUl {
+      display: flex;
+      list-style-type: none; }
+      #careersHeader .container nav .navUl li {
+        margin: 0 1rem;
+        font-size: 1.3rem;
+        font-weight: 300; }
+        #careersHeader .container nav .navUl li a:hover {
+          color: #fdff8d;
+          border-bottom: 1px solid #fdff8d;
+          transition: 1s; }
+        #careersHeader .container nav .navUl li .current {
+          border-bottom: 1px solid #fdff8d; }
+  #careersHeader .container #careersHero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50%; }
+    #careersHeader .container #careersHero h1 {
+      color: #fdff8d;
+      font-family: "Pacifico", sans-serif;
+      font-size: 4rem; }
+    #careersHeader .container #careersHero a {
+      display: block;
+      position: relative;
+      background-color: #1d1d1d;
+      font-weight: 600;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 1rem;
+      width: 180px;
+      border-radius: 10px; }
+      #careersHeader .container #careersHero a:hover {
+        color: #1d1d1d;
+        background-color: #fdff8d;
+        transition: 1s ease-in-out; }
+
+#careerInfo .container {
+  padding: 3rem; }
+  #careerInfo .container .careerInfoTitle {
+    display: flex;
+    justify-content: center; }
+    #careerInfo .container .careerInfoTitle h1 {
+      color: #fff;
+      font-size: 3rem; }
+      #careerInfo .container .careerInfoTitle h1 span {
+        color: #fdff8d;
+        font-family: "Pacifico", cursive; }
+  #careerInfo .container .careerInfoContent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 4rem; }
+    #careerInfo .container .careerInfoContent p {
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 300; }
+  #careerInfo .container .arrowDown {
+    display: flex;
+    justify-content: center; }
+    #careerInfo .container .arrowDown i {
+      font-size: 3rem;
+      color: #fdff8d; }
+
+#application .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  #application .container h1 {
+    color: #fff;
+    font-size: 3rem;
+    position: relative;
+    margin-bottom: 2rem; }
+    #application .container h1 span {
+      font-family: "Pacifico", cursive;
+      color: #fdff8d; }
+  #application .container form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    color: #fff; }
+    #application .container form .firstName,
+    #application .container form .lastName,
+    #application .container form .phoneNumber,
+    #application .container form .emailAddress {
+      width: 800px;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 10px; }
 
 #footer .container {
   display: flex;
   justify-content: space-evenly;
   padding: 2rem;
-  line-height: 2.5rem; }
+  line-height: 2.5rem;
+  background-color: #2f2f2f; }
   #footer .container .siteLinks {
     display: flex;
     flex-direction: column; }

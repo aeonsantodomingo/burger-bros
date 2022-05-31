@@ -112,7 +112,8 @@ a {
       a {
         display: block;
         position: relative;
-        background-color: $bg-dark;
+        background-color: $highlighter;
+        color: $bg-dark;
         font-weight: 600;
         text-align: center;
         padding: 1rem;
@@ -121,8 +122,8 @@ a {
         border-radius: 10px;
 
         &:hover {
-          color: $bg-dark;
-          background-color: $highlighter;
+          color: $text-color;
+          background-color: $bg-dark;
           transition: 1s ease-in-out;
         }
       }
@@ -300,6 +301,8 @@ a {
     }
   }
 }
+
+// menu header
 
 #menuHeader {
   .container {
@@ -552,16 +555,202 @@ a {
     align-items: center;
     padding: 4.5rem;
     a {
-      color: $text-color;
-      background-color: $bg-less-dark;
+      color: $bg-dark;
+      background-color: $highlighter;
       padding: 1.5rem;
       border-radius: 10px;
       text-align: center;
       width: 200px;
+      font-weight: 500;
       &:hover {
-        background-color: $highlighter;
-        color: $bg-dark;
+        background-color: $bg-less-dark;
+        color: $text-color;
         transition: 1s;
+      }
+    }
+  }
+}
+
+#careersHeader {
+  .container {
+    background-image: url(/dist/assets/images/careers1.jpg);
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: 1px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 400px;
+      background-color: #333;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.7;
+      z-index: 0;
+    }
+
+    & > * {
+      z-index: 10;
+      position: relative;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem;
+
+      .logo {
+        font-size: 3rem;
+        font-family: "Pacifico", cursive;
+
+        &:hover {
+          color: $highlighter;
+          transition: 1s;
+        }
+      }
+
+      .hamburger {
+        display: none;
+      }
+
+      .navUl {
+        display: flex;
+        list-style-type: none;
+
+        li {
+          margin: 0 1rem;
+          font-size: 1.3rem;
+          font-weight: 300;
+
+          a:hover {
+            color: $highlighter;
+            border-bottom: 1px solid $highlighter;
+            transition: 1s;
+          }
+
+          .current {
+            border-bottom: 1px solid $highlighter;
+          }
+        }
+      }
+    }
+
+    #careersHero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 50%;
+
+      h1 {
+        color: $highlighter;
+        font-family: "Pacifico", sans-serif;
+        font-size: 4rem;
+      }
+
+      a {
+        display: block;
+        position: relative;
+        background-color: $bg-dark;
+        font-weight: 600;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 1rem;
+        width: 180px;
+        border-radius: 10px;
+
+        &:hover {
+          color: $bg-dark;
+          background-color: $highlighter;
+          transition: 1s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+// career info
+
+#careerInfo {
+  .container {
+    padding: 3rem;
+    .careerInfoTitle {
+      display: flex;
+      justify-content: center;
+      h1 {
+        color: $text-color;
+        font-size: 3rem;
+        span {
+          color: $highlighter;
+          font-family: "Pacifico", cursive;
+        }
+      }
+    }
+
+    .careerInfoContent {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+      padding: 4rem;
+      p {
+        color: $text-color;
+        font-size: 2rem;
+        font-weight: 300;
+      }
+    }
+
+    .arrowDown {
+      display: flex;
+      justify-content: center;
+      i {
+        font-size: 3rem;
+        color: $highlighter;
+      }
+    }
+  }
+}
+
+// application
+
+#application {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      color: $text-color;
+      font-size: 3rem;
+      position: relative;
+      margin-bottom: 2rem;
+
+      span {
+        font-family: "Pacifico", cursive;
+        color: $highlighter;
+      }
+    }
+
+    form {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-bottom: 2rem;
+      color: $text-color;
+
+      .firstName,
+      .lastName,
+      .phoneNumber,
+      .emailAddress {
+        width: 800px;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 10px;
       }
     }
   }
@@ -575,6 +764,7 @@ a {
     justify-content: space-evenly;
     padding: 2rem;
     line-height: 2.5rem;
+    background-color: $bg-medium;
 
     .siteLinks {
       display: flex;
