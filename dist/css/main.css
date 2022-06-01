@@ -494,7 +494,7 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     color: #fff; }
     #application .container form .firstName,
     #application .container form .lastName,
@@ -503,7 +503,101 @@ a {
       width: 800px;
       padding: 1rem;
       margin: 1rem 0;
+      border-radius: 10px;
+      border: none; }
+      #application .container form .firstName:focus,
+      #application .container form .lastName:focus,
+      #application .container form .phoneNumber:focus,
+      #application .container form .emailAddress:focus {
+        outline: none; }
+    #application .container form label {
+      margin: 0.5rem 0; }
+    #application .container form button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+      width: 300px;
+      padding: 1rem;
+      border-radius: 10px;
+      border: none;
+      background-color: #fdff8d;
+      font-weight: 500; }
+      #application .container form button:hover {
+        color: #fff;
+        background-color: #3f3f3f;
+        transition: 1s; }
+
+#aboutHeader .container {
+  background-image: url(/dist/assets/images/about1.jpg);
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: 1px; }
+  #aboutHeader .container::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 0; }
+  #aboutHeader .container > * {
+    z-index: 10;
+    position: relative; }
+  #aboutHeader .container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem; }
+    #aboutHeader .container nav .logo {
+      font-size: 3rem;
+      font-family: "Pacifico", cursive; }
+      #aboutHeader .container nav .logo:hover {
+        color: #fdff8d;
+        transition: 1s; }
+    #aboutHeader .container nav .hamburger {
+      display: none; }
+    #aboutHeader .container nav .navUl {
+      display: flex;
+      list-style-type: none; }
+      #aboutHeader .container nav .navUl li {
+        margin: 0 1rem;
+        font-size: 1.3rem;
+        font-weight: 300; }
+        #aboutHeader .container nav .navUl li a:hover {
+          color: #fdff8d;
+          border-bottom: 1px solid #fdff8d;
+          transition: 1s; }
+        #aboutHeader .container nav .navUl li .current {
+          border-bottom: 1px solid #fdff8d; }
+  #aboutHeader .container #aboutHero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50%; }
+    #aboutHeader .container #aboutHero h1 {
+      color: #fdff8d;
+      font-family: "Pacifico", sans-serif;
+      font-size: 4rem; }
+    #aboutHeader .container #aboutHero a {
+      display: block;
+      position: relative;
+      background-color: #1d1d1d;
+      font-weight: 600;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 1rem;
+      width: 180px;
       border-radius: 10px; }
+      #aboutHeader .container #aboutHero a:hover {
+        color: #1d1d1d;
+        background-color: #fdff8d;
+        transition: 1s ease-in-out; }
 
 #footer .container {
   display: flex;
