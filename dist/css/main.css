@@ -16,7 +16,7 @@ a {
   color: #fff; }
 
 #header .container {
-  background-image: url(/dist/assets/images/heroImg.jpg);
+  background-image: url(/assets/images/heroImg.jpg);
   height: 600px;
   width: 100%;
   background-size: cover;
@@ -139,27 +139,28 @@ a {
     margin: 0 auto; }
     #crowdFavorite .container .crowdFavInfo h1 {
       color: #fff;
-      font-size: 4.5rem; }
+      font-size: 3rem;
+      margin-bottom: 2rem; }
       #crowdFavorite .container .crowdFavInfo h1 span {
         color: #fdff8d;
         font-family: "Pacifico", sans-serif;
         line-height: 1.2rem; }
     #crowdFavorite .container .crowdFavInfo .crowdFavLinks {
-      margin: 2rem 0; }
-      #crowdFavorite .container .crowdFavInfo .crowdFavLinks a {
-        display: inline-block;
-        position: relative;
-        background-color: #1d1d1d;
-        font-weight: 600;
-        text-align: center;
-        padding: 1rem;
-        margin: 0 0.5rem;
-        width: 180px;
-        border-radius: 10px; }
-        #crowdFavorite .container .crowdFavInfo .crowdFavLinks a:hover {
-          color: #1d1d1d;
-          background-color: #fdff8d;
-          transition: 1s ease-in-out; }
+      display: flex; }
+      #crowdFavorite .container .crowdFavInfo .crowdFavLinks div {
+        margin: 0 1rem; }
+        #crowdFavorite .container .crowdFavInfo .crowdFavLinks div a {
+          display: inline-block;
+          background-color: #1d1d1d;
+          font-weight: 600;
+          text-align: center;
+          padding: 1rem;
+          width: 180px;
+          border-radius: 10px; }
+          #crowdFavorite .container .crowdFavInfo .crowdFavLinks div a:hover {
+            color: #1d1d1d;
+            background-color: #fdff8d;
+            transition: 1s ease-in-out; }
 
 #findUsBanner .container {
   display: flex;
@@ -204,7 +205,7 @@ a {
     height: 100%; }
 
 #menuHeader .container {
-  background-image: url(/dist/assets/images/menuBanner.jpg);
+  background-image: url(/assets/images/menuBanner.jpg);
   height: 400px;
   width: 100%;
   background-size: cover;
@@ -379,7 +380,7 @@ a {
       transition: 1s; }
 
 #careersHeader .container {
-  background-image: url(/dist/assets/images/careers1.jpg);
+  background-image: url(/assets/images/careers1.jpg);
   height: 400px;
   width: 100%;
   background-size: cover;
@@ -529,7 +530,7 @@ a {
         transition: 1s; }
 
 #aboutHeader .container {
-  background-image: url(/dist/assets/images/about1.jpg);
+  background-image: url(/assets/images/about1.jpg);
   height: 400px;
   width: 100%;
   background-size: cover;

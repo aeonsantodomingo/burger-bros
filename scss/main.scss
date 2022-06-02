@@ -26,7 +26,7 @@ a {
 
 #header {
   .container {
-    background-image: url(/dist/assets/images/heroImg.jpg);
+    background-image: url(/assets/images/heroImg.jpg);
     height: 600px;
     width: 100%;
     background-size: cover;
@@ -131,7 +131,7 @@ a {
   }
 }
 
-// hero
+// about
 
 #about {
   .container {
@@ -203,9 +203,11 @@ a {
       align-items: center;
       flex-direction: column;
       margin: 0 auto;
+
       h1 {
         color: $text-color;
-        font-size: 4.5rem;
+        font-size: 3rem;
+        margin-bottom: 2rem;
         span {
           color: $highlighter;
           font-family: "Pacifico", sans-serif;
@@ -214,23 +216,24 @@ a {
       }
 
       .crowdFavLinks {
-        margin: 2rem 0;
+        display: flex;
 
-        a {
-          display: inline-block;
-          position: relative;
-          background-color: $bg-dark;
-          font-weight: 600;
-          text-align: center;
-          padding: 1rem;
-          margin: 0 0.5rem;
-          width: 180px;
-          border-radius: 10px;
+        div {
+          margin: 0 1rem;
+          a {
+            display: inline-block;
+            background-color: $bg-dark;
+            font-weight: 600;
+            text-align: center;
+            padding: 1rem;
+            width: 180px;
+            border-radius: 10px;
 
-          &:hover {
-            color: $bg-dark;
-            background-color: $highlighter;
-            transition: 1s ease-in-out;
+            &:hover {
+              color: $bg-dark;
+              background-color: $highlighter;
+              transition: 1s ease-in-out;
+            }
           }
         }
       }
@@ -306,7 +309,7 @@ a {
 
 #menuHeader {
   .container {
-    background-image: url(/dist/assets/images/menuBanner.jpg);
+    background-image: url(/assets/images/menuBanner.jpg);
     height: 400px;
     width: 100%;
     background-size: cover;
@@ -573,7 +576,7 @@ a {
 
 #careersHeader {
   .container {
-    background-image: url(/dist/assets/images/careers1.jpg);
+    background-image: url(/assets/images/careers1.jpg);
     height: 400px;
     width: 100%;
     background-size: cover;
@@ -786,7 +789,7 @@ a {
 
 #aboutHeader {
   .container {
-    background-image: url(/dist/assets/images/about1.jpg);
+    background-image: url(/assets/images/about1.jpg);
     height: 400px;
     width: 100%;
     background-size: cover;

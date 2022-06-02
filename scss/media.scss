@@ -1,0 +1,484 @@
+@import "variables";
+
+@media (max-width: 800px) {
+  // mobile header
+
+  #header {
+    .container {
+      height: 350px;
+      background-position: center;
+      &::after {
+        height: 350px;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        .logo {
+          font-size: 2rem;
+        }
+
+        .hamburger {
+          display: block;
+          background-color: transparent;
+          color: $text-color;
+          border: none;
+          font-size: 2rem;
+        }
+
+        .navUl {
+          display: none;
+          width: 100%;
+          margin: 2rem 0;
+          padding: 2rem;
+
+          li {
+            margin: 2rem;
+
+            .current {
+              border-bottom: 3px solid $bg-dark;
+            }
+
+            a {
+              color: $bg-dark;
+              font-weight: 600;
+            }
+          }
+        }
+
+        .navUl.show {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: #fdff8df3;
+        }
+      }
+
+      #hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 1rem;
+        h1 {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+
+  // mobile about
+
+  #about {
+    .container {
+      padding: 0.5rem 2rem;
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  // mobile crowd favorite
+
+  #crowdFavorite {
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .crowdFavBanner {
+        display: none;
+      }
+
+      .crowdFavInfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 3rem;
+        margin: 0 auto;
+
+        h1 {
+          font-size: 3.5rem;
+        }
+
+        .crowdFavLinks {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          div {
+            margin: 1rem;
+          }
+        }
+      }
+
+      .crowdFavImg {
+        height: 300px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // mobile locations
+
+  #findUsBanner {
+    .container {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  #location {
+    .container {
+      flex-direction: column-reverse;
+
+      .locationInfo {
+        padding: 2rem;
+        h1 {
+          font-size: 2.4rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+
+      .locationImg {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // mobile menu header
+
+  #menuHeader {
+    .container {
+      height: 350px;
+      background-position: center;
+      &::after {
+        height: 350px;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        .logo {
+          font-size: 2rem;
+        }
+
+        .hamburger {
+          display: block;
+          background-color: transparent;
+          color: $text-color;
+          border: none;
+          font-size: 2rem;
+        }
+
+        .navUl {
+          display: none;
+          width: 100%;
+          margin: 2rem 0;
+          padding: 2rem;
+
+          li {
+            margin: 2rem;
+
+            .current {
+              border-bottom: 3px solid $bg-dark;
+            }
+
+            a {
+              color: $bg-dark;
+              font-weight: 600;
+            }
+          }
+        }
+
+        .navUl.show {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: #fdff8df3;
+        }
+      }
+
+      #menuHero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 1rem;
+        h1 {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+
+  // mobile burgers
+
+  #burgersBanner {
+    .container {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  #burgersItems {
+    .container {
+      grid-template-columns: repeat(1, 1fr);
+
+      .burgersCard {
+        width: 350px;
+        .cardImg {
+          img {
+            width: 120px;
+          }
+        }
+        .cardInfo {
+          padding: 1rem;
+
+          h1 {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  #sidesBanner {
+    .container {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  #sidesItems {
+    .container {
+      grid-template-columns: repeat(1, 1fr);
+
+      .sidesCard {
+        width: 350px;
+        .cardImg {
+          img {
+            width: 120px;
+          }
+        }
+        .cardInfo {
+          padding: 1rem;
+
+          h1 {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  // mobile career
+
+  #careersHeader {
+    .container {
+      height: 350px;
+      background-position: center;
+      &::after {
+        height: 350px;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        .logo {
+          font-size: 2rem;
+        }
+
+        .hamburger {
+          display: block;
+          background-color: transparent;
+          color: $text-color;
+          border: none;
+          font-size: 2rem;
+        }
+
+        .navUl {
+          display: none;
+          width: 100%;
+          margin: 2rem 0;
+          padding: 2rem;
+
+          li {
+            margin: 2rem;
+
+            .current {
+              border-bottom: 3px solid $bg-dark;
+            }
+
+            a {
+              color: $bg-dark;
+              font-weight: 600;
+            }
+          }
+        }
+
+        .navUl.show {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: #fdff8df3;
+        }
+      }
+
+      #careersHero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 1rem;
+        h1 {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+
+  #careerInfo {
+    .container {
+      .careerInfoTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+      .careerInfoContent {
+        flex-direction: column;
+        padding: 2rem;
+        p {
+          font-size: 2.5rem;
+          margin: 2.5rem 0;
+        }
+      }
+    }
+  }
+
+  #application {
+    .container {
+      h1,
+      span {
+        font-size: 1rem;
+      }
+
+      form {
+        font-size: 16px;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+
+        .firstName,
+        .lastName,
+        .phoneNumber,
+        .emailAddress {
+          width: 320px;
+        }
+      }
+    }
+  }
+
+  // mobile about
+
+  #aboutHeader {
+    .container {
+      height: 350px;
+      background-position: center;
+      &::after {
+        height: 350px;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        .logo {
+          font-size: 2rem;
+        }
+
+        .hamburger {
+          display: block;
+          background-color: transparent;
+          color: $text-color;
+          border: none;
+          font-size: 2rem;
+        }
+
+        .navUl {
+          display: none;
+          width: 100%;
+          margin: 2rem 0;
+          padding: 2rem;
+
+          li {
+            margin: 2rem;
+
+            .current {
+              border-bottom: 3px solid $bg-dark;
+            }
+
+            a {
+              color: $bg-dark;
+              font-weight: 600;
+            }
+          }
+        }
+
+        .navUl.show {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: #fdff8df3;
+        }
+      }
+
+      #aboutHero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 1rem;
+        h1 {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+
+  // mobile footer
+
+  #footer {
+    .container {
+      flex-direction: column;
+      .siteLinks {
+        margin: 1.5rem 0;
+      }
+      .contact {
+        margin: 1.5rem 0;
+      }
+    }
+    .credits {
+      font-size: 0.8rem;
+    }
+  }
+}
