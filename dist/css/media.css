@@ -266,3 +266,9 @@
       margin: 1.5rem 0; }
   #footer .credits {
     font-size: 0.8rem; } }
+
+@media (min-width: 1920px) {
+  #crowdFavorite .container .crowdFavBanner {
+    bottom: -150px; }
+  #crowdFavorite .container .crowdFavInfo h1 {
+    font-size: 5rem; } }

@@ -482,3 +482,21 @@
     }
   }
 }
+
+// large monitors
+
+@media (min-width: 1920px) {
+  #crowdFavorite {
+    .container {
+      .crowdFavBanner {
+        bottom: -150px;
+      }
+
+      .crowdFavInfo {
+        h1 {
+          font-size: 5rem;
+        }
+      }
+    }
+  }
+}
